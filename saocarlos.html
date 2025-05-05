@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Drogaria São Carlos</title>
+  <style>
+    :root {
+      --verde-principal: #39b54a;
+      --verde-escuro: #008040;
+      --verde-claro: #eaf9ec;
+      --cinza-texto: #333;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--branco);
+      color: var(--cinza-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--verde-principal);
+      color: var(--branco);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    .carlinhos-caixa {
+      background-color: var(--verde-claro);
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .carlinhos-conteudo {
+      background-color: #ffffff;
+      border-left: 6px solid var(--verde-principal);
+      border-radius: 12px;
+      padding: 35px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .carlinhos-conteudo h2 {
+      font-size: 1.8em;
+      color: var(--verde-escuro);
+      margin-bottom: 20px;
+    }
+
+    .carlinhos-conteudo p {
+      font-size: 1em;
+      color: var(--cinza-texto);
+      margin: 12px 0;
+    }
+
+    .carlinhos-conteudo strong {
+      color: #000;
+    }
+
+    footer {
+      background-color: var(--verde-principal);
+      color: var(--branco);
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .carlinhos-conteudo {
+        padding: 25px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Drogaria São Carlos</h1>
+    <p>Cabralia Paulista – Saúde, cuidado e compromisso com a sua família</p>
+  </header>
+
+  <!-- Bloco São Carlinhos -->
+  <section class="carlinhos-caixa">
+    <div class="carlinhos-conteudo">
+      <h2>🙋‍♂️ Conheça o São Carlinhos</h2>
+      <p>
+        Ele é mais do que um farmacêutico. O São Carlinhos é o coração da Drogaria São Carlos:
+        <strong>atento, acessível e sempre pronto para ajudar</strong>.
+      </p>
+      <p>
+        Com décadas de experiência e um carinho enorme por <strong>Cabralia Paulista</strong>,
+        ele está com você nos momentos mais importantes da sua saúde. Seja para orientar sobre medicamentos,
+        dar conselhos ou simplesmente ouvir — <strong>ele está online e disponível 24 horas por dia</strong>.
+      </p>
+      <p>
+        O São Carlinhos é o seu <strong>amigo da saúde no dia a dia</strong>.
+        Quando você precisar, ele estará lá — com conhecimento, cuidado e dedicação.
+      </p>
+      <p><strong>💬 Clique em “Chat Now”, escolha seu idioma, habilite o microfone e tire suas dúvidas 24 horas por dia.</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Drogaria São Carlos – Cabralia Paulista. Todos os direitos reservados.
+  </footer>
+
+  <!-- Heygen Embed Script -->
+  <script>
+    !function(window){
+      const host="https://labs.heygen.com",
+      url=host+"/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJHcmFoYW1fUHJvZmVzc2lvbmFsTG9va19w%0D%0AdWJsaWMiLCJwcmV2aWV3SW1nIjoiaHR0cHM6Ly9maWxlczIuaGV5Z2VuLmFpL2F2YXRhci92My82%0D%0ANDhkOTY1ZDk3Yjk0MDlmOTAxYjNkNjE5NjI3NmZiNV81NTg1MC9wcmV2aWV3X3RhcmdldC53ZWJw%0D%0AIiwibmVlZFJlbW92ZUJhY2tncm91bmQiOnRydWUsImtub3dsZWRnZUJhc2VJZCI6IjhlMmE3N2Q2%0D%0AOWNmNzQ4NmRhOWQ5MTlhY2M4M2MyOTlmIiwidXNlcm5hbWUiOiI4ODlhZWQ4YjdiMTM0NzgzYjlh%0D%0ANzllOWZmYTA2NzUzOCJ9&inIFrame=1",
+      clientWidth=document.body.clientWidth,
+      wrapDiv=document.createElement("div");
+      wrapDiv.id="heygen-streaming-embed";
+      const container=document.createElement("div");
+      container.id="heygen-streaming-container";
+      const stylesheet=document.createElement("style");
+      stylesheet.innerHTML=`
+        #heygen-streaming-embed {
+          z-index: 9999;
+          position: fixed;
+          left: 40px;
+          bottom: 40px;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+          transition: all linear 0.1s;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+        }
+        #heygen-streaming-embed.show {
+          opacity: 1;
+          visibility: visible;
+        }
+        #heygen-streaming-embed.expand {
+          ${clientWidth<540?"height: 266px; width: 96%; left: 50%; transform: translateX(-50%);":"height: 366px; width: calc(366px * 16 / 9);"}
+          border: 0;
+          border-radius: 8px;
+        }
+        #heygen-streaming-container {
+          width: 100%;
+          height: 100%;
+        }
+        #heygen-streaming-container iframe {
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      `;
+      const iframe=document.createElement("iframe");
+      iframe.allowFullscreen=!1;
+      iframe.title="Streaming Embed";
+      iframe.role="dialog";
+      iframe.allow="microphone";
+      iframe.src=url;
+      let visible=!1,initial=!1;
+      window.addEventListener("message",(e=>{
+        e.origin===host&&e.data&&e.data.type==="streaming-embed"&&(
+          "init"===e.data.action?(initial=!0,wrapDiv.classList.toggle("show",initial)):
+          "show"===e.data.action?(visible=!0,wrapDiv.classList.toggle("expand",visible)):
+          "hide"===e.data.action&&(visible=!1,wrapDiv.classList.toggle("expand",visible))
+        )
+      }));
+      container.appendChild(iframe);
+      wrapDiv.appendChild(stylesheet);
+      wrapDiv.appendChild(container);
+      document.body.appendChild(wrapDiv);
+    }(globalThis);
+  </script>
+
+</body>
+</html>
+
+<script>!function(window){const host="https://labs.heygen.com",url=host+"/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJQZWRyb19Qcm9mZXNzaW9uYWxMb29rX3B1%0D%0AYmxpYyIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzQ1%0D%0AZjdkZTRkYTMyMjQ4ZWY5NTJhOGRiMzI1YWVlMjU4XzU1OTEwL3ByZXZpZXdfdGFyZ2V0LndlYnAi%0D%0ALCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6dHJ1ZSwia25vd2xlZGdlQmFzZUlkIjoiZGVmMTkzZTcz%0D%0AYzZmNGYzYzlkMjdmMmNlOTY0ZTVhZDciLCJ1c2VybmFtZSI6Ijg4OWFlZDhiN2IxMzQ3ODNiOWE3%0D%0AOWU5ZmZhMDY3NTM4In0%3D&inIFrame=1",clientWidth=document.body.clientWidth,wrapDiv=document.createElement("div");wrapDiv.id="heygen-streaming-embed";const container=document.createElement("div");container.id="heygen-streaming-container";const stylesheet=document.createElement("style");stylesheet.innerHTML=`\n  #heygen-streaming-embed {\n    z-index: 9999;\n    position: fixed;\n    left: 40px;\n    bottom: 40px;\n    width: 200px;\n    height: 200px;\n    border-radius: 50%;\n    border: 2px solid #fff;\n    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.12);\n    transition: all linear 0.1s;\n    overflow: hidden;\n\n    opacity: 0;\n    visibility: hidden;\n  }\n  #heygen-streaming-embed.show {\n    opacity: 1;\n    visibility: visible;\n  }\n  #heygen-streaming-embed.expand {\n    ${clientWidth<540?"height: 266px; width: 96%; left: 50%; transform: translateX(-50%);":"height: 366px; width: calc(366px * 16 / 9);"}\n    border: 0;\n    border-radius: 8px;\n  }\n  #heygen-streaming-container {\n    width: 100%;\n    height: 100%;\n  }\n  #heygen-streaming-container iframe {\n    width: 100%;\n    height: 100%;\n    border: 0;\n  }\n  `;const iframe=document.createElement("iframe");iframe.allowFullscreen=!1,iframe.title="Streaming Embed",iframe.role="dialog",iframe.allow="microphone",iframe.src=url;let visible=!1,initial=!1;window.addEventListener("message",(e=>{e.origin===host&&e.data&&e.data.type&&"streaming-embed"===e.data.type&&("init"===e.data.action?(initial=!0,wrapDiv.classList.toggle("show",initial)):"show"===e.data.action?(visible=!0,wrapDiv.classList.toggle("expand",visible)):"hide"===e.data.action&&(visible=!1,wrapDiv.classList.toggle("expand",visible)))})),container.appendChild(iframe),wrapDiv.appendChild(stylesheet),wrapDiv.appendChild(container),document.body.appendChild(wrapDiv)}(globalThis);</script>
